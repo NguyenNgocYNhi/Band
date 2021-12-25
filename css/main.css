@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  z-index: 2;
+}
+
+.header .menu {
+  width: 35%;
+  position: relative;
+}
+
+.header .menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  text-transform: uppercase;
+}
+
+.header .menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 60px;
+}
+
+.header .menu ul li img {
+  width: 14px;
+  height: 8px;
+  padding-left: 2px;
+}
+
+.header .menu ul .more {
+  display: block;
+  width: 20%;
+  position: relative;
+  height: 60px;
+}
+
+.header .menu ul .more .more-1 {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu ul .more .list {
+  width: 150%;
+  position: relative;
+  color: white;
+  border: 1px solid transparent;
+  display: none;
+}
+
+.header .menu ul .more .list ul {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+.header .menu ul .more .list ul li {
+  width: 100%;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.header .menu ul .more .list ul li:hover {
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.header .menu ul .more:hover .list {
+  display: block;
+}
+
+.header .menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.header .search {
+  height: 60px;
+  width: 65%;
+  position: relative;
+}
+
+.header .search .searcher {
+  padding-left: calc(100% - 60px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .search .searcher .back {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .search .searcher .back img {
+  height: 30px;
+}
+
+.header .search .searcher:hover .back:hover {
+  background-color: rgba(255, 0, 0, 0.568);
+}
+
+.pic {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.pic #chicago {
+  background-size: cover;
+}
+
+.pic #chicago img {
+  width: 100vw;
+}
+
+.pic #chicago .content {
+  color: white;
+  text-align: center;
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+}
+
+.pic #chicago .content h1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.pic #chicago .content p {
+  font-weight: bold;
+}
+
+.space {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 110px;
+}
+
+.space .cont {
+  width: 60%;
+  text-align: center;
+}
+
+.space .cont p {
+  text-align: justify;
+  font-weight: bold;
+}
+
+.space .cont h1 {
+  font-size: 40px;
+  letter-spacing: 3.5px;
+}
+
+.space .cont h6 {
+  padding: 30px;
+  font-style: italic;
+  color: #7e7e7e;
+}
+
+.space .cont .picture {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.space .cont .picture img {
+  width: 70%;
+}
+
+.space .cont .picture h6 {
+  color: black;
+  font-style: normal;
+}
+
+.tour {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #131313;
+  padding: 100px 0;
+}
+
+.tour .cont {
+  width: 60%;
+  position: relative;
+}
+
+.tour .cont h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.tour .cont h6 {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  padding: 20px 0 30px 0;
+}
+
+.tour .cont .table {
+  border: 0.1px solid transparent;
+  background-color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.tour .cont .table .sep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.tour .cont .table .sep p {
+  padding-top: 3.5px;
+}
+
+.tour .cont .table .sep .sold {
+  margin-left: 10px;
+  background-color: #ff2b2b;
+  padding: 5px 10px;
+  color: white;
+}
+
+.tour .cont .table .oct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.267);
+}
+
+.tour .cont .table .oct p {
+  padding-top: 3.5px;
+}
+
+.tour .cont .table .oct .sold {
+  margin-left: 10px;
+  background-color: #ff2b2b;
+  padding: 5px 10px;
+  color: white;
+}
+
+.tour .cont .table .nov {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.267);
+}
+
+.tour .cont .table .nov p {
+  padding-top: 3.5px;
+}
+
+.tour .cont .table .nov .num {
+  border-radius: 100px;
+  padding: 3px 10px;
+  background-color: black;
+  color: white;
+}
+
+.tour .card {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tour .card .ny {
+  width: 32%;
+  position: relative;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.tour .card .ny img {
+  width: 100%;
+}
+
+.tour .card .ny .cover {
+  width: 100%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.tour .card .ny .cover:hover {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+.tour .card .ny .nd {
+  padding: 20px;
+}
+
+.tour .card .ny .nd h6 {
+  color: grey;
+  text-align: left;
+  font-style: normal;
+  padding: 20px 0;
+}
+
+.tour .card .ny .nd p {
+  font-weight: bold;
+}
+
+.tour .card .ny .nd button {
+  color: white;
+  margin: 20px 0;
+  border-color: transparent;
+  background-color: black;
+  padding: 10px;
+}
+
+.tour .card .ny .nd button:hover {
+  background-color: grey;
+}
+
+.tour .card .paris {
+  width: 32%;
+  position: relative;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.tour .card .paris img {
+  width: 100%;
+}
+
+.tour .card .paris .cover {
+  width: 100%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.tour .card .paris .cover:hover {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+.tour .card .paris .nd {
+  padding: 20px;
+}
+
+.tour .card .paris .nd h6 {
+  color: grey;
+  text-align: left;
+  font-style: normal;
+  padding: 20px 0;
+}
+
+.tour .card .paris .nd p {
+  font-weight: bold;
+}
+
+.tour .card .paris .nd button {
+  color: white;
+  margin: 20px 0;
+  border-color: transparent;
+  background-color: black;
+  padding: 10px;
+}
+
+.tour .card .paris .nd button:hover {
+  background-color: grey;
+}
+
+.tour .card .san {
+  width: 32%;
+  position: relative;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.tour .card .san img {
+  width: 100%;
+}
+
+.tour .card .san .cover {
+  width: 100%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.tour .card .san .cover:hover {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+.tour .card .san .nd {
+  padding: 20px;
+}
+
+.tour .card .san .nd h6 {
+  color: grey;
+  text-align: left;
+  font-style: normal;
+  padding: 20px 0;
+}
+
+.tour .card .san .nd p {
+  font-weight: bold;
+}
+
+.tour .card .san .nd button {
+  color: white;
+  margin: 20px 0;
+  border-color: transparent;
+  background-color: black;
+  padding: 10px;
+}
+
+.tour .card .san .nd button:hover {
+  background-color: grey;
+}
+
+#ticket {
+  display: none;
+  -webkit-transform: translateX(40%) translateY(20%);
+          transform: translateX(40%) translateY(20%);
+  width: 55%;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+}
+
+#ticket .head {
+  width: 100%;
+  height: 16vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #009688;
+}
+
+#ticket .head img {
+  padding-right: 20px;
+  height: 4vh;
+}
+
+#ticket .head h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  letter-spacing: 5px;
+}
+
+#ticket .mid {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+#ticket .mid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+#ticket .mid div img {
+  height: 18px;
+  padding-right: 6px;
+}
+
+#ticket .mid div p {
+  font-size: 18px;
+}
+
+#ticket .mid input {
+  width: 96%;
+  margin: 0 2%;
+  padding: 10px;
+  border: 2px solid grey;
+}
+
+#ticket .mid .pay {
+  height: 70px;
+  width: 96%;
+  margin: 30px 2%;
+  background-color: #009688;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ticket .mid .pay img {
+  height: 15px;
+}
+
+#ticket .mid .pay p {
+  color: white;
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+#ticket .mid .pay:hover {
+  background-color: grey;
+}
+
+#ticket .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2%;
+  padding-bottom: 30px;
+}
+
+#ticket .end button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-color: transparent;
+  background-color: #ff3d3d;
+  padding: 10px;
+}
+
+#ticket .end button img {
+  height: 15px;
+  padding-left: 5px;
+}
+
+#ticket .end button p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#ticket .end button:hover {
+  background-color: grey;
+}
+
+#ticket .end p {
+  font-weight: bold;
+}
+
+#ticket .end p a {
+  color: #0066ff;
+}
+
+.contact {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .content {
+  width: 60%;
+}
+
+.contact .content h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.contact .content p {
+  text-align: center;
+  font-style: italic;
+  padding: 30px 0;
+}
+
+.contact .content .divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .content .divide .info .chi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .content .divide .info .chi img {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  height: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.contact .content .divide .info .chi h3 {
+  font-size: 20px;
+}
+
+.contact .content .divide .info .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .content .divide .info .phone img {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  height: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.contact .content .divide .info .phone h3 {
+  font-size: 20px;
+}
+
+.contact .content .divide .info .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .content .divide .info .mail img {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  height: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.contact .content .divide .info .mail h3 {
+  font-size: 20px;
+}
+
+.contact .content .divide .send .ne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .content .divide .send .ne input {
+  width: 49%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.589);
+}
+
+.contact .content .divide .send input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.589);
+  margin: 5px 0;
+}
+
+.contact .content .divide .send .s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact .content .divide .send .s button {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-color: transparent;
+  margin-top: 10px;
+}
+
+.contact .content .divide .send .s button:hover {
+  background-color: grey;
+  color: black;
+}
+
+.bg img {
+  width: 100vw;
+}
+
+.social {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social .icon img {
+  height: 30px;
+  margin: 0 2px;
+}
+
+.social p {
+  text-align: center;
+  padding: 20px 0;
+}
+/*# sourceMappingURL=main.css.map */
